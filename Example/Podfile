@@ -1,0 +1,29 @@
+use_frameworks!
+
+source 'https://github.com/iOSModularization/AHFMSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'AHFMEpisodeListVC_Example' do
+  pod 'AHFMEpisodeListVC', :path => '../'
+  
+  pod 'AHFMServices'
+  pod 'AHFMDataTransformers'
+  pod 'AHFMModuleManager'
+  
+  pod 'AHServiceRouter'
+  
+  pod 'AHFMAudioPlayerManager'
+  
+  pod 'AHFMDataCenter'
+  pod 'AHFMNetworking'
+  
+  pod 'AHFMEpisodeListVCServices'
+  pod 'AHFMEpisodeListVCManager'
+  
+  
+  target 'AHFMEpisodeListVC_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
